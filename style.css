@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: #fafafa;
+}
+body .wrapper {
+  display: flex;
+}
+body .wrapper .sidebar {
+  width: 20%;
+}
+body .wrapper .mainContainer {
+  width: 80%;
+  display: flex;
+}
+body .wrapper .mainContainer .listWrapper {
+  width: 20%;
+  height: 100vh;
+}
+body .wrapper .mainContainer .listWrapper:first-of-type {
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+}
+body .wrapper .mainContainer .listWrapper:not(:first-of-type) {
+  border-right: 1px solid #808080;
+}
+body .wrapper div.elemDrag {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.09);
+  border-radius: 3px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  word-wrap: break-word;
+  color: #555;
+  line-height: 1.58;
+  padding: 15px;
+  border-top: 4px solid #008000;
+  transition: all 0.3s;
+}
